@@ -1,0 +1,138 @@
+.banner
+  position: relative
+  padding-bottom: 50px
+
+.banner__wrapper
+  max-width: 1227px
+  width: 100%
+  margin: 0 auto
+
+.banner__information
+  width: 100%
+  margin-bottom: 45px
+  background-image: url("./bg.png")
+  background-size: cover
+  background-repeat: no-repeat
+
+  +max-w(760)
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-image: none
+    margin-bottom: 99px
+
+.banner__bg
+  display: none
+  width: 100%
+  height: auto
+  margin-bottom: 64px
+
+  img
+    width: 100%
+    height: 100%
+
+  +max-w(760)
+    display: block
+
+.banner__title
+  padding: 112px 0 0 83px
+  margin-bottom: 24px
+  color: #002F3E
+  font-family: 'PoppinsBold', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 54px
+  line-height: 64px
+  letter-spacing: 3px
+
+  +max-w(760)
+    padding: 0
+    font-size: 32px
+    line-height: 42px
+
+.banner__description
+  padding-left: 83px
+  margin-bottom: 72px
+  color: #002F3E
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 24px
+  line-height: 36px
+  letter-spacing: 1px
+  text-transform: capitalize
+
+  +max-w(760)
+    padding: 0
+    margin-bottom: 48px
+    font-size: 17px
+    line-height: 25px
+
+.banner__coming-wrapper
+  padding-bottom: 110px
+
+  +max-w(760)
+    padding-bottom: 0
+
+.banner__coming-btn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 308px
+  height: 64px
+  margin-left: 83px
+  background: linear-gradient(90deg, #006A63 -18.66%, #00D2A4 118.08%)
+  box-shadow: 0px 6px 15px rgba(2, 128, 108, 0.3)
+  border-radius: 32px
+  color: #FFFFFF
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 24px
+  line-height: 30px
+  letter-spacing: 0.352px
+  text-decoration: none
+
+  +max-w(760)
+    margin-left: 0
+
+.banner__items
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+
+  +max-w(760)
+    flex-wrap: wrap
+    justify-content: center
+
+.banner__item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  max-width: 135px
+  width: 100%
+
+  +max-w(760)
+    max-width: 50%
+    margin-bottom: 65px
+
+.banner__item-img
+  height: 48px
+  width: auto
+  margin-bottom: 9px
+
+  img
+    height: 100%
+
+.banner__item-description
+  color: #002F3E
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  line-height: 30px
+  text-align: center
+  letter-spacing: 1px
+  text-transform: capitalize

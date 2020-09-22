@@ -1,0 +1,136 @@
+.callback
+  position: relative
+  padding-bottom: 100px
+
+
+.callback__wrapper
+  max-width: 1277px
+  width: 100%
+  margin: 0 auto
+  background-image: url("./bg.png")
+  background-size: contain
+  background-repeat: no-repeat
+
+  +max-w(1260)
+    background-size: cover
+
+  +max-w(760)
+    background-image: url("./bg-mobile.png")
+    background-size: cover
+
+.callback__feedback
+  padding: 83px 121px 83px 113px
+
+  +max-w(1260)
+    padding-top: 30px
+    padding-bottom: 30px
+
+  +max-w(760)
+    padding: 35px 35px 43px 35px
+
+  +max-w(375)
+    padding: 35px 15px 43px 15px
+
+
+.callback__title
+  margin-bottom: 56px
+  color: #002F3E
+  font-family: 'PoppinsBold', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 45px
+  line-height: 58px
+  text-transform: capitalize
+
+  +max-w(960)
+    margin-bottom: 32px
+
+.callback__input-wrapper
+  display: flex
+  justify-content: space-between
+  width: 100%
+  margin-bottom: 32px
+
+  +max-w(1260)
+    flex-direction: column
+    margin-bottom: 0
+
+.callback__input
+  display: block
+  width: calc(50% - 16px)
+  height: 48px
+  padding-left: 24px
+  box-sizing: border-box
+  border-radius: 24px
+  border: none
+  background: #F2FAF8
+  color: #8CA1A8
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  letter-spacing: 1px
+  outline: none
+
+  +max-w(1260)
+    width: 100%
+    margin-bottom: 16px
+
+  &::placeholder
+    color: #8CA1A8
+
+.callback__area
+  display: block
+  width: 100%
+  height: 96px
+  margin-bottom: 56px
+  padding: 12px 24px 0
+  box-sizing: border-box
+  border-radius: 24px
+  border: none
+  background: #F2FAF8
+  color: #8CA1A8
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  letter-spacing: 1px
+  outline: none
+  resize: none
+
+  +max-w(1260)
+    margin-bottom: 16px
+
+  &::placeholder
+    color: #8CA1A8
+
+.callback__submit-wrapper
+  display: flex
+  justify-content: flex-end
+  width: 100%
+
+  +max-w(760)
+    justify-content: center
+
+
+.callback__submit
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 308px
+  height: 64px
+  background: linear-gradient(90deg, #006A63 -18.66%, #00D2A4 118.08%)
+  box-shadow: 0px 6px 15px rgba(2, 128, 108, 0.3)
+  border: none
+  border-radius: 32px
+  color: #FFFFFF
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 24px
+  line-height: 30px
+  letter-spacing: 0.352px
+  text-decoration: none
+  outline: none
