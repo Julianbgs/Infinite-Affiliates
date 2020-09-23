@@ -1,6 +1,14 @@
 import './header.sass';
 
 export default () => {
+  const $link = $('.header__link');
+  $link.on('click', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 700);
+  });
+
   $(document).on('click', '#header-trigger', function (event) {
     event.preventDefault();
     const $menu = $('.header__mobile-menu');

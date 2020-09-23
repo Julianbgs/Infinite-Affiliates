@@ -3,8 +3,9 @@ import './grid';
 import './wrapper';
 import './content';
 import initHeader from './header';
-import './footer';
+import initFooter from './footer';
 
 export default () => {
   initHeader();
+  initFooter();
 };

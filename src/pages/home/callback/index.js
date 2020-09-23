@@ -14,8 +14,6 @@ export default () => {
     $resultEmail.text("");
 
     if (validateEmail(email)) {
-      $resultEmail.text(email + " is valid");
-      $resultEmail.css("color", "green");
     } else {
       $resultEmail.text(email + " is not valid");
       $resultEmail.css("color", "red");
