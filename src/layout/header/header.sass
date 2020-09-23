@@ -19,10 +19,19 @@
   left: 0
   bottom: 0
   right: 0
-  display: none
   height: 100vh
   width: 100%
   z-index: 20
+  transform: translateX(-100%)
+  opacity: 0
+  transition: all 1s
+
+
+.open
+  transform: translateX(0)
+  opacity: 1
+
+
 
 .header__mobile-menu-overlay
   position: absolute
@@ -68,7 +77,6 @@
   flex-direction: column
   padding-left: 24px
   box-sizing: border-box
-  opacity: 0
 
 .header__item
   margin-right: 40px
