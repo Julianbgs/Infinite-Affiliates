@@ -7,7 +7,7 @@ export default () => {
     const $list = $('.header__list--mobile');
     const $trigger = $('#header-trigger');
     const $body = $('body')
-    $menu.animate({width:'toggle'}, 500, () => {
+    $menu.animate({width:'toggle'}, 350, () => {
       if ($trigger.hasClass('js-trigger-active')) {
         $list.css('opacity', 1)
       }
