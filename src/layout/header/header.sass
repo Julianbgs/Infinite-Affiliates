@@ -13,6 +13,38 @@
   +max-w(760)
     padding: 4px 6px
 
+.header__mobile-menu
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  display: none
+  height: 100vh
+  width: 100%
+  z-index: 10
+
+.header__mobile-menu-overlay
+  position: absolute
+  right: 0
+  top: 0
+  height: 100vh
+  width: 20%
+  background: rgba(0, 0, 0, 0.5)
+  backdrop-filter: blur(12px)
+
+.header__mobile-menu-body
+  width: 80%
+  height: 100%
+  background: #F2FAF8
+
+.header__mobile-menu-top
+  position: relative
+  height: 64px
+  width: 100%
+  background: #F2FAF8
+  box-shadow: 0px 0px 24px rgba(0, 97, 87, 0.2)
+
 .header__logo
   width: 54px
   height: 54px
@@ -32,11 +64,21 @@
   margin: 0
   padding: 0
 
+.header__list--mobile
+  flex-direction: column
+  padding-left: 24px
+  box-sizing: border-box
+  opacity: 0
+
 .header__item
   margin-right: 40px
 
   &:last-child
     margin-right: 0
+
+.header__item--mobile
+  margin-right: 0
+  padding-top: 56px
 
 .header__link
   color: #002F3E

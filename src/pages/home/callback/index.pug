@@ -1,11 +1,16 @@
 section.callback
+  .callback__rect
   .callback__wrapper
     form.callback__feedback
       .callback__title
         | Contact us
       .callback__input-wrapper
-        input(type="text" placeholder="Username").callback__input
-        input(type="email" placeholder="E-mail").callback__input
+        .callback__input-elem
+          input(type="text" placeholder="Username" id="name").callback__input
+          p.result-validation#resultName
+        .callback__input-elem
+          input(type="email" placeholder="E-mail" id="email").callback__input
+          p.result-validation#resultEmail
       textarea(placeholder="Description").callback__area
       .callback__submit-wrapper
-        input(type="submit" value="Send").callback__submit
+        input(type="submit" value="Send" id="validate").callback__submit

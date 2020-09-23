@@ -1,7 +1,18 @@
 .callback
   position: relative
-  padding-bottom: 100px
+  padding: 100px 0
 
+.callback__rect
+  position: absolute
+  top: 200px
+  left: 0
+  width: 140px
+  height: 249px
+  background-image: url("./rect.png")
+  background-size: contain
+
+  +max-w(1199)
+    display: none
 
 .callback__wrapper
   max-width: 1277px
@@ -55,9 +66,17 @@
     flex-direction: column
     margin-bottom: 0
 
+.callback__input-elem
+  position: relative
+  width: calc(50% - 16px)
+
+  +max-w(1260)
+    width: 100%
+    margin-bottom: 16px
+
 .callback__input
   display: block
-  width: calc(50% - 16px)
+  width: 100%
   height: 48px
   padding-left: 24px
   box-sizing: border-box
@@ -72,10 +91,6 @@
   line-height: 24px
   letter-spacing: 1px
   outline: none
-
-  +max-w(1260)
-    width: 100%
-    margin-bottom: 16px
 
   &::placeholder
     color: #8CA1A8
@@ -134,3 +149,18 @@
   letter-spacing: 0.352px
   text-decoration: none
   outline: none
+
+.result-validation
+  position: absolute
+  bottom: -27px
+  left: 10px
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+
+  +max-w(960)
+    position: relative
+    bottom: 0
+
