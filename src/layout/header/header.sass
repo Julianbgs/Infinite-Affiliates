@@ -1,14 +1,20 @@
 .header
-  position: relative
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
   background: #F2FAF8
   box-shadow: 0px 0px 24px rgba(0, 97, 87, 0.2)
+  z-index: 25
 
 .header__wrapper
   display: flex
   justify-content: space-between
   align-items: center
+  max-width: 1200px
   width: 100%
-  padding: 4px 83px
+  margin: 0 auto
+  padding: 4px 0
 
   +max-w(760)
     padding: 4px 6px
@@ -31,13 +37,16 @@
   opacity: 1
 
 .header__mobile-menu-overlay
-  position: absolute
+  display: none
+  position: fixed
   right: 0
   top: 0
+  bottom: 0
   height: 100vh
   width: 20%
   background: rgba(0, 0, 0, 0.5)
   backdrop-filter: blur(12px)
+  z-index: 30
 
 .header__mobile-menu-body
   width: 80%
@@ -104,7 +113,7 @@
   z-index: 100
   cursor: pointer
 
-  +max-w(1270)
+  +max-w(760)
     display: block
 
 
