@@ -14,7 +14,10 @@
   background-repeat: no-repeat
 
   +max-w(1199)
-    display: none
+    right: -16px
+    left: auto
+    top: -100px
+    width: 100px
 
 .services__rect2
   position: absolute
@@ -41,7 +44,10 @@
   background-repeat: no-repeat
 
   +max-w(1199)
-    display: none
+    top: -90px
+    left: -16px
+    width: 100px
+    transform: none
 
 .services__rect4
   position: absolute
@@ -81,7 +87,8 @@
   background-repeat: no-repeat
 
   +max-w(1199)
-    display: none
+    top: 29%
+    width: 100px
 
 .services__rect7
   position: absolute
@@ -95,7 +102,10 @@
   background-repeat: no-repeat
 
   +max-w(1199)
-    display: none
+    top: 44%
+    left: auto
+    right: 20px
+    width: 100px
 
 .services__rect8
   position: absolute
@@ -109,7 +119,9 @@
   background-repeat: no-repeat
 
   +max-w(1199)
-    display: none
+    top: 58%
+    width: 100px
+    background-image: url("./rect10.png")
 
 .services__rect9
   position: absolute
@@ -139,7 +151,10 @@
     right: 0
 
   +max-w(1199)
-    display: none
+    top: -110px
+    right: 10px
+    width: 130px
+    background-image: url("./rect11.png")
 
 .services__rect11
   position: absolute
@@ -152,7 +167,12 @@
   background-repeat: no-repeat
 
   +max-w(1199)
-    display: none
+    top: -140px
+    left: auto
+    right: 10px
+    width: 140px
+    background-image: url("./rect-mobile.png")
+
 
 .services__rect12
   position: absolute
@@ -200,7 +220,7 @@
 
   +max-w(960)
     flex-direction: column
-    margin-bottom: 40px
+    margin-bottom: 100px
 
     &:nth-of-type(2n)
       .services__image
@@ -237,10 +257,21 @@
   line-height: 58px
   text-transform: capitalize
 
-  +max-w(460)
+  +max-w(760)
+    display: none
     margin-bottom: 30px
     font-size: 24px
     line-height: 28px
+
+.services__title--mobile
+  display: none
+
+  +max-w(760)
+    order: -1
+    display: block
+    width: 100%
+    font-size: 32px
+    line-height: 42px
 
 .services__description
   margin-bottom: 30px
