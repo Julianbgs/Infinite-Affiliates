@@ -59,7 +59,7 @@ export default () => {
       //   console.log(resp);
       // })
       $.ajax({
-        url: 'http://api.infiniteaffiliates.co/seller-site/contact-us/',
+        url: 'https://api.infiniteaffiliates.co/seller-site/contact-us/',
         type: "POST",
         data: json,
         success: (resp) => {
