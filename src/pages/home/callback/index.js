@@ -1,4 +1,5 @@
 import './index.sass';
+import axios from 'axios';
 
 export default () => {
   function validateEmail(email) {
@@ -53,6 +54,10 @@ export default () => {
          text: $descr
       }
       const json = JSON.stringify(bodyReq);
+
+      // axios.post('http://api.infiniteaffiliates.co/seller-site/contact-us/', json).then((resp) => {
+      //   console.log(resp);
+      // })
       $.ajax({
         url: 'http://api.infiniteaffiliates.co/seller-site/contact-us/',
         type: "POST",
