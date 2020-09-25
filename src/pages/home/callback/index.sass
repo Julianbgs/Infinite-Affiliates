@@ -106,6 +106,12 @@
   &::placeholder
     color: #8CA1A8
 
+.callback__area-wrapper
+  position: relative
+  display: flex
+  justify-content: center
+  width: 100%
+
 .callback__area
   display: block
   width: 100%
@@ -175,3 +181,79 @@
     position: relative
     bottom: 0
 
+.result-validation--area
+  bottom: 25px
+
+.callback__modal
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  display: none
+  justify-content: center
+  align-items: center
+
+.callback__overlay
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.3)
+  z-index: 9
+
+.callback__modal-wrap
+  position: relative
+  max-width: 450px
+  width: 100%
+  height: 200px
+  padding: 20px
+  box-sizing: border-box
+  border-radius: 15px
+  background-color: #F2FAF8
+  z-index: 10
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100px
+    height: 130px
+    background-image: url("./rect.png")
+    background-size: contain
+    background-repeat: no-repeat
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 20px
+    width: 100px
+    height: 88px
+    background-image: url("./rect11.png")
+    background-size: contain
+    background-repeat: no-repeat
+
+.callback__close
+  position: absolute
+  top: 20px
+  right: 20px
+  color: #002f3e
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  line-height: 24px
+
+.callback__modal-title
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  font-family: 'PoppinsRegular', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px

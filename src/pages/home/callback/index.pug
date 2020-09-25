@@ -11,6 +11,14 @@ section.callback#contactus
         .callback__input-elem
           input(type="email" placeholder="E-mail" id="email").callback__input
           p.result-validation#resultEmail
-      textarea(placeholder="Description").callback__area
+      .callback__area-wrapper
+        textarea(placeholder="Description" id="descr").callback__area
+        p.result-validation.result-validation--area#resultDescr
       .callback__submit-wrapper
         input(type="submit" value="Send" id="validate").callback__submit
+.callback__modal
+  .callback__overlay
+  .callback__modal-wrap
+    .callback__close
+      | x
+    p.callback__modal-title
